@@ -2,10 +2,11 @@
  const app=express();
  const db=require('./db')
  app.use(express.json())
- const port=3000;
+  
  const Menu=require('./models/Menu')
 const UserRoute=require('./routes/UserRoute')
-
+require('dotenv').config();
+const port=process.env.PORT || 3000;
 app.get("/menu",async(req,res)=>{
  const menu=await Menu.find().lean();
  if(!menu) res.json("No menu avalible")

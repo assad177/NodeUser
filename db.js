@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const mongoURL = "mongodb://localhost:27017/mydatabase";
+// const mongoURL = "mongodb://localhost:27017/mydatabase";
+const mongoURL="mongodb+srv://assadwazeer3:assad7890@cluster0.evtfmxq.mongodb.net/"
 
 mongoose.connect(mongoURL, {
   

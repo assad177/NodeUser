@@ -33,5 +33,6 @@ salary:{
 
 })
 // now create user model
+//  Hello backend you are awesome
 const User=mongoose.model('User',UserSchema);
  module.exports=User;
